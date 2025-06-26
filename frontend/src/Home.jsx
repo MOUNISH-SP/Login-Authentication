@@ -7,7 +7,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('https://login-authentication-pi.vercel.app//api/auth/me', { withCredentials: true })
+    axios.get('https://login-authentication-pi.vercel.app/api/auth/me', { withCredentials: true })
       .then(r => setU(r.data.user))
       .catch(() => setU(null));
   }, []);
