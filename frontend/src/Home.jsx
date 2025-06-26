@@ -13,7 +13,7 @@ export default function Home() {
   }, []);
 
   const lg = async () => {
-    await axios.post('https://login-authentication-pi.vercel.app//api/auth/logout', {}, { withCredentials: true });
+    await axios.post('https://login-authentication-pi.vercel.app/api/auth/logout', {}, { withCredentials: true });
     setU(null);
   };
 
